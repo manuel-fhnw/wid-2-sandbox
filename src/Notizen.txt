@@ -1,0 +1,89 @@
+console.log("Test2");
+
+  const a = "Test";   // var - alrt // let ist weniger strikt als const
+
+   if (a === "Test") {console.log("a ist gleich Test"); } else {console.log("A ist nicht gleich Test");}
+
+
+### Übung 1: IF-Statement (Im JAVASCRIPT - Teil)
+const a = 0
+  
+  if (typeof a === "number") {console.log("a ist eine Nummer");} 
+  else if (typeof a === "string") {console.log("a ist ein String");}
+  else if (typeof a === "boolean") {console.log("a ist ein Boolean");}
+  else if (typeof a === 0) {console.log("a ist Null");}
+  else {console.log("a hat einen unbekannten Datentyp")}
+
+
+### ternärer Operator
+<div>{user === "admin" ? "isAdmin" : "isNotAdmin"}</div>  
+
+
+### Übung 2: Ternärer Operator / Ternary Operator
+export default function App() {
+  /*
+   *    JAVASCRIPT hier
+   */
+
+  const isTheTruth = true
+
+  return (
+    /*
+     *    HTML hier
+     *    + JavaScript in {} möglich
+     */
+    <div>
+    <p style={{color: isTheTruth ? "green" : "red"}}>Heute ist Mittwoch</p>
+    </div>                    
+    /*
+     *
+     */
+  );
+}
+
+
+### Übung 3: Funktionen A - Funktionsdeklaration
+export default function App() {
+  /*
+   *    JAVASCRIPT hier
+   */
+
+  function multiply (x, y = 2){
+    if (typeof x !== "number" || typeof y !== "number"){
+      console.log("Der erster und/oder zweite Wert ist keine Zahl");
+    }
+    else {return console.log(x * y)};
+}
+
+  multiply(5, 8);
+}
+
+
+### Übung 4: Funktionen B - Pfeilfunktionen / "Arrow functions"
+#### 4.1 Leerzeichen einfügen
+const twoWords = (vorname, nachname) => {return vorname + " " + nachname};
+
+console.log(twoWords("Manuel", "Jermann"))
+
+
+#### 4.2 Zahlen vergleich
+const zahlenVergleich = (z1 ) => {
+    if (z1 === 0) return "Die eingegebene Zahl ist gleich gross wie Null";
+    else if (z1 > 0) return "Die eingegeben Zahl ist grösser als Null";
+    return "Die eingegebne Zahl ist kleiner als Null";
+  };
+
+console.log(zahlenVergleich(0))
+
+
+#### 4.3 Max
+const max = (z1, z2 ) => {return z1 > z2? z1 : z2};
+
+console.log(max(10, 20))
+
+
+### Übung 5: Array-Methoden
+
+
+
+

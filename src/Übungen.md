@@ -99,7 +99,7 @@ const wordTwo = "Welt"
 `Eine Begrüssung mit fünf Buchstaben: ${wordOne}`  // Dieser Template String verwendet nur eine (1) Variable.
 ```
 
-#### 4.2 
+#### 4.2 Zahlen vergleich
 Schreibe eine Funktion die prüft, ob eine Zahl kleiner, grösser oder gleich 0 ist und einen entsprechenden String zurückgibt. Dafür brauchst du ein If-Statement. In den verschiedenen Zweigen (if, else if, else) benutzt du jeweils ein  `return`-Statement, da ein Wert zurückgegeben werden soll (kein console.log() als "Nebeneffekt").
 
 #### 4.3 Max
